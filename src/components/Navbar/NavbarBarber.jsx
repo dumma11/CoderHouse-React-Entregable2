@@ -17,13 +17,13 @@ const NavbarBarber = () => {
             <Nav.Link href="#features">Peluquería</Nav.Link>
             <NavDropdown title="Categorías" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">
-                Cuidado del Cabello
+                beauty
               </NavDropdown.Item>
               <NavDropdown.Item href="#action4">
-                Cuidado de la Barba
+                fragrances
               </NavDropdown.Item>
               <NavDropdown.Item href="#action5">
-                Herramientas y Accesorios
+                furniture
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action6">

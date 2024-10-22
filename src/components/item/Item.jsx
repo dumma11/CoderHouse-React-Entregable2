@@ -6,17 +6,17 @@ function Item({item, onClick}) {
       style={{ width: '18rem', cursor: 'pointer' }} 
       onClick={onClick}
     >
-      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Img variant="top" src={item.thumbnail} />
       <Card.Body>
-        <Card.Title>{item.name}</Card.Title>
+        <Card.Title>{item.title}</Card.Title>
         <Card.Text>
-          {item.descripcion}
+          {item.description}
         </Card.Text>
         <Card.Text>
-          Categoría: {item.categoria}
+          Categoría: {item.category}
         </Card.Text>
         <Card.Text>
-          Precio: {item.precio}
+          Precio: {item.price}
         </Card.Text>
       </Card.Body>
     </Card>
