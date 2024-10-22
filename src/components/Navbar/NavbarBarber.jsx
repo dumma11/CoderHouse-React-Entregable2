@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import imagen from '../../assets/images/logochico.png'
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from '../CartWidget/CartWidget'
+import { Link } from 'react-router-dom'
 import './NavbarBarber.css'
 
 const NavbarBarber = () => {
@@ -13,22 +14,14 @@ const NavbarBarber = () => {
         <Container>
           <Navbar.Brand href="#home"><img src={imagen} alt="" /></Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link as={Link} to={'/CoderHouse-React-Entregable2/'}>Home</Nav.Link>
             <Nav.Link href="#features">Peluquería</Nav.Link>
             <NavDropdown title="Categorías" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">
-                beauty
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                fragrances
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action5">
-                furniture
-              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to={'category/beauty'}>beauty</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to={'category/fragrances'}>fragrances</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to={'category/furniture'}>furniture</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action6">
-                Vista General
-              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to={'/CoderHouse-React-Entregable2/'}>Vista General</NavDropdown.Item>
             </NavDropdown>
             <CartWidget itemCount="0" />
           </Nav>
