@@ -6,7 +6,7 @@ import Col from "react-bootstrap/esm/Col"
 function itemList({ items }) {
     return (
         <Container>
-            <Row>
+            <Row xs={1} md={3}>
                 {items.map(item => (
                     <Col key={item.id}>
                         <Item item={item} />

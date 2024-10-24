@@ -15,11 +15,11 @@ const NavbarBarber = () => {
           <Navbar.Brand as={Link} to='/CoderHouse-React-Entregable2/'><img src={imagen} alt="" /></Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link as={Link} to='/CoderHouse-React-Entregable2/'>Home</Nav.Link>
-            <Nav.Link href="#features">Peluquería</Nav.Link>
+            <Nav.Link as={Link} to='https://dumma11.github.io/Arditi-Barber-Song/' target="_blank">Peluquería</Nav.Link>
             <NavDropdown title="Categorías" id="navbarScrollingDropdown">
-              <NavDropdown.Item as={Link} to='category/mens-watches'>Relojes de hombre</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to='category/laptops'>Laptops</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to='category/motorcycle'>Motocicletas</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to='/category/mens-watches'>Relojes de hombre</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to='/category/laptops'>Laptops</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to='/category/motorcycle'>Motocicletas</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item as={Link} to='/CoderHouse-React-Entregable2/'>Vista General</NavDropdown.Item>
             </NavDropdown>

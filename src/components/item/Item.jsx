@@ -1,11 +1,12 @@
 import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/esm/Col';
+import Button from 'react-bootstrap/esm/Button';
+import { Link } from 'react-router-dom'
 
-function Item({item, onClick}) {
+function Item({item}) {
   return (
-    <Card 
-      style={{ width: '18rem', cursor: 'pointer' }} 
-      onClick={onClick}
-    >
+    <Col>
+    <Card className='h-100'>
       <Card.Img variant="top" src={item.thumbnail} />
       <Card.Body>
         <Card.Title>{item.title}</Card.Title>
@@ -19,7 +20,9 @@ function Item({item, onClick}) {
           Precio: {item.price}
         </Card.Text>
       </Card.Body>
+      <Button as={Link} to={`/item/${item.id}`}>Ver más</Button>
     </Card>
+    </Col>
   );
 }
 

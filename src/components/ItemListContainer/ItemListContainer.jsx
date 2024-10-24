@@ -5,7 +5,6 @@ import ItemList from '../itemList/ItemList'
 
 const ItemListContainer = ({ text }) => {
     const [items, setItems] = useState([])
-
     const {id} = useParams()
 
     useEffect(() => {
