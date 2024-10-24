@@ -18,7 +18,7 @@ function App() {
     <Navbar />
     <Routes>
       <Route path="/CoderHouse-React-Entregable2/" element={<ItemListContainer />} />
-      {/* <Route path="users/*" element={<Users />} /> */}
+      <Route path="category/:id" element={<ItemListContainer />} />
     </Routes>
   </BrowserRouter>
   )

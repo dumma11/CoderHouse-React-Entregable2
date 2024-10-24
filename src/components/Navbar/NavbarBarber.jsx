@@ -12,16 +12,16 @@ const NavbarBarber = () => {
     <>
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand href="#home"><img src={imagen} alt="" /></Navbar.Brand>
+          <Navbar.Brand as={Link} to='/CoderHouse-React-Entregable2/'><img src={imagen} alt="" /></Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link as={Link} to={'/CoderHouse-React-Entregable2/'}>Home</Nav.Link>
+            <Nav.Link as={Link} to='/CoderHouse-React-Entregable2/'>Home</Nav.Link>
             <Nav.Link href="#features">Peluquería</Nav.Link>
             <NavDropdown title="Categorías" id="navbarScrollingDropdown">
-              <NavDropdown.Item as={Link} to={'category/beauty'}>beauty</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to={'category/fragrances'}>fragrances</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to={'category/furniture'}>furniture</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to='category/mens-watches'>Relojes de hombre</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to='category/laptops'>Laptops</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to='category/motorcycle'>Motocicletas</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item as={Link} to={'/CoderHouse-React-Entregable2/'}>Vista General</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to='/CoderHouse-React-Entregable2/'>Vista General</NavDropdown.Item>
             </NavDropdown>
             <CartWidget itemCount="0" />
           </Nav>
