@@ -18,7 +18,7 @@ function ItemDetail({ detail }) {
         <p className="item-detail-brand"><strong>Marca:</strong> {detail.brand}</p>
         <p className="item-detail-price"><strong>Precio:</strong> ${detail.price}</p>
       </div>
-      <ItemCount />
+      <ItemCount detail={detail} />
     </div>
   );
 }

@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useContext } from 'react'
 import { useParams } from 'react-router-dom'    
 import './ItemListContainer.css'
 import ItemList from '../itemList/ItemList'
+import Loader from '../Loader/Loader'
 
 const ItemListContainer = ({ text }) => {
     const [items, setItems] = useState([])
@@ -17,9 +18,9 @@ const ItemListContainer = ({ text }) => {
     }, [id])
 
     return (
-        <div>
-            <ItemList items={items} />
-        </div>
+        <>
+            {items.length > 0 ? <ItemList items={items} /> : <Loader />}
+        </>
     )
 }
 
