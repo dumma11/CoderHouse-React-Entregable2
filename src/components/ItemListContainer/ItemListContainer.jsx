@@ -1,20 +1,22 @@
 import { useEffect, useState, useContext } from 'react'
-import { useParams } from 'react-router-dom'    
+import { useParams } from 'react-router-dom'
 import './ItemListContainer.css'
 import ItemList from '../itemList/ItemList'
 import Loader from '../Loader/Loader'
+import { getItems, getCategoryItems } from '../../firebase/db'
 
 const ItemListContainer = ({ text }) => {
     const [items, setItems] = useState([])
-    const {id} = useParams()
+    const { id } = useParams()
 
     useEffect(() => {
-        const url = 'https://dummyjson.com/products'
-        const urlCategory = `https://dummyjson.com/products/category/${id}`
-
-        fetch(id ? urlCategory : url)
-            .then(res => res.json())
-            .then(res => setItems(res.products))
+        if (!id) {
+            getItems()
+                .then(res => setItems(res))
+        } else {
+            getCategoryItems(id)
+                .then(res => setItems(res))
+        }
     }, [id])
 
     return (

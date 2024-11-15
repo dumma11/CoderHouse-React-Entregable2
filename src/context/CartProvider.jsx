@@ -14,8 +14,14 @@ function CartProvider({ children }) {
         return total
     }
 
+    const getTotal = () => {
+        const priceOnly = cart.map(item => item.price*item.qty)
+        const total = priceOnly.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
+        return total
+    }
+
     return (
-        <cartContext.Provider value={{ cart, addToCart, clearCart, getQuantity }}>
+        <cartContext.Provider value={{ cart, addToCart, clearCart, getQuantity, getTotal }}>
             {children}
         </cartContext.Provider>
 
