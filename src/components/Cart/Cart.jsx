@@ -1,10 +1,10 @@
-import { useCart } from "../../context/cartContext";
-import CartItem from "../CartItem/CartItem";
-import CheckoutForm from "../CheckoutForm/CheckoutForm";
-import "./Cart.css";
+import { useCart } from "../../context/cartContext"
+import CartItem from "../CartItem/CartItem"
+import CheckoutForm from "../CheckoutForm/CheckoutForm"
+import "./Cart.css"
 
 function Cart() {
-    const { cart, getTotal, clearCart, removeFromCart } = useCart();
+    const { cart, getTotal, clearCart, removeFromCart } = useCart()
 
     return (
         <div className="cart-container">
@@ -32,7 +32,7 @@ function Cart() {
 
             <CheckoutForm cart={cart} total={getTotal()} />
         </div>
-    );
+    )
 }
 
-export default Cart;
+export default Cart

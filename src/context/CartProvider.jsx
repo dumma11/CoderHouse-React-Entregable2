@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { cartContext } from "./cartContext";
+import { useState } from "react"
+import { cartContext } from "./cartContext"
 
 function CartProvider({ children }) {
     const [cart, setCart] = useState([])
@@ -9,8 +9,8 @@ function CartProvider({ children }) {
     const clearCart = () => setCart([])
 
     const removeFromCart = (id) => {
-        setCart(cart.filter((item) => item.id !== id));
-    };
+        setCart(cart.filter((item) => item.id !== id))
+    }
 
     const getQuantity = () => {
         const qtyOnly = cart.map(item => item.qty)

@@ -1,22 +1,50 @@
-import { serverTimestamp } from "firebase/firestore";
-import { createOrder } from "../../firebase/db";
-import "./CheckoutForm.css";
+import { serverTimestamp } from "firebase/firestore"
+import { createOrder } from "../../firebase/db"
+import { useCart } from "../../context/cartContext"
+import { useNavigate } from "react-router-dom"
+import Swal from "sweetalert2"
+import "./CheckoutForm.css"
 
 function CheckoutForm({ cart, total }) {
-    const handleSubmit = (e) => {
-        e.preventDefault();
+    const { clearCart } = useCart()
+    const navigate = useNavigate()
 
-        const form = e.target;
-        const [name, email, phone] = form;
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+
+        const form = e.target
+        const [name, email, phone] = form
 
         const order = {
             buyer: { name: name.value, email: email.value, phone: phone.value },
             items: cart,
             date: serverTimestamp(),
             total: total,
-        };
-        createOrder(order);
-    };
+        }
+
+        try {
+            const orderId = await createOrder(order)
+
+            clearCart()
+
+            Swal.fire({
+                title: "¡Compra realizada con éxito!",
+                text: `El ID de tu compra es: ${orderId}`,
+                icon: "success",
+                confirmButtonText: "OK",
+            }).then(() => {
+                navigate("/CoderHouse-React-ProyectoFinal/")
+            })
+        } catch (error) {
+            console.error("Error al crear la orden:", error)
+            Swal.fire({
+                title: "Error",
+                text: "Hubo un problema al procesar tu compra. Por favor, intenta nuevamente.",
+                icon: "error",
+                confirmButtonText: "OK",
+            })
+        }
+    }
 
     return (
         <div className="checkout-form-container">
@@ -31,7 +59,7 @@ function CheckoutForm({ cart, total }) {
             </form>
             <p className="checkout-total">Total: ${total}</p>
         </div>
-    );
+    )
 }
 
-export default CheckoutForm;
+export default CheckoutForm

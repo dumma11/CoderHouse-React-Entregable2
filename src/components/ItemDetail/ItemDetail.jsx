@@ -3,7 +3,7 @@ import ItemCount from '../ItemCount/ItemCount'
 
 function ItemDetail({ detail }) {
   if (!detail) {
-    return <p>Cargando detalles del producto...</p>;
+    return <p>Cargando detalles del producto...</p>
   }
 
   return (
@@ -20,7 +20,7 @@ function ItemDetail({ detail }) {
       </div>
       <ItemCount detail={detail} />
     </div>
-  );
+  )
 }
 
-export default ItemDetail;
+export default ItemDetail

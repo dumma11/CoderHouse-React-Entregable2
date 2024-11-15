@@ -1,4 +1,4 @@
-import "./CartItem.css";
+import "./CartItem.css"
 
 function CartItem({ prod, removeFromCart }) {
     return (
@@ -12,7 +12,7 @@ function CartItem({ prod, removeFromCart }) {
                 Eliminar
             </button>
         </div>
-    );
+    )
 }
 
-export default CartItem;
+export default CartItem

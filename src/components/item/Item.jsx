@@ -1,6 +1,6 @@
-import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/esm/Col';
-import Button from 'react-bootstrap/esm/Button';
+import Card from 'react-bootstrap/Card'
+import Col from 'react-bootstrap/esm/Col'
+import Button from 'react-bootstrap/esm/Button'
 import { Link } from 'react-router-dom'
 
 function Item({item}) {
@@ -23,7 +23,7 @@ function Item({item}) {
       <Button as={Link} to={`/CoderHouse-React-ProyectoFinal/item/${item.id}`}>Ver más</Button>
     </Card>
     </Col>
-  );
+  )
 }
 
-export default Item;
+export default Item
