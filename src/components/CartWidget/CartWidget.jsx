@@ -6,7 +6,7 @@ import { useCart } from '../../context/cartContext'
 const CartWidget = () => {
   const { getQuantity } = useCart()
   return (
-    <Link to='/CoderHouse-React-Entregable2/cart'>
+    <Link to='/CoderHouse-React-ProyectoFinal/cart'>
       <div className="cart-widget">
         <FaShoppingCart className="cart-icon" />
         <span className="cart-count">{getQuantity()}</span>

@@ -20,7 +20,7 @@ function Item({item}) {
           Precio: {item.price}
         </Card.Text>
       </Card.Body>
-      <Button as={Link} to={`/CoderHouse-React-Entregable2/item/${item.id}`}>Ver más</Button>
+      <Button as={Link} to={`/CoderHouse-React-ProyectoFinal/item/${item.id}`}>Ver más</Button>
     </Card>
     </Col>
   );
