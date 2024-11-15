@@ -61,7 +61,7 @@ TiendaCoder/
 **Inicia el servidor de desarrollo:**
 - npm start
 
-**Dependencias principales:**
+## Dependencias principales:
 - react: La biblioteca principal para construir la interfaz de usuario de la aplicación.
 - react-dom: Necesaria para renderizar la aplicación React en el navegador.
 - react-router-dom: Para manejar el enrutamiento en la aplicación, permitiendo la navegación entre diferentes vistas.
@@ -70,7 +70,7 @@ TiendaCoder/
 - react-bootstrap: Biblioteca de componentes de Bootstrap para React, que proporciona componentes listos para usar como botones, tarjetas, formularios, etc.
 - sweetalert2: Para mostrar alertas y mensajes interactivos.
 
-**Dependencias de desarrollo:**
+## Dependencias de desarrollo:
 - vite: Herramienta de construcción y servidor de desarrollo rápida para React.
 - eslint: Herramienta de análisis de código estático para mantener la calidad del código.
 - @vitejs/plugin-react: Plugin necesario para trabajar con React en Vite.
