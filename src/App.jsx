@@ -14,10 +14,10 @@ function App() {
     <BrowserRouter>
     <Navbar />
     <Routes>
-      <Route path="/CoderHouse-React-Entregable2/" element={<ItemListContainer />} />
-      <Route path="/CoderHouse-React-Entregable2/category/:id" element={<ItemListContainer />} />
-      <Route path="/CoderHouse-React-Entregable2/item/:id" element={<ItemDetailContainer />} />
-      <Route path="/CoderHouse-React-Entregable2/cart" element={<Cart />} />
+      <Route path="/CoderHouse-React-ProyectoFinal/" element={<ItemListContainer />} />
+      <Route path="/CoderHouse-React-ProyectoFinal/category/:id" element={<ItemListContainer />} />
+      <Route path="/CoderHouse-React-ProyectoFinal/item/:id" element={<ItemDetailContainer />} />
+      <Route path="/CoderHouse-React-ProyectoFinal/cart" element={<Cart />} />
       <Route path="*" element={<h1>El url ingresado no existe</h1>} />
     </Routes>
   </BrowserRouter>

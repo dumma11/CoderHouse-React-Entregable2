@@ -12,18 +12,18 @@ const NavbarBarber = () => {
     <>
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand as={Link} to='/CoderHouse-React-Entregable2/'>
+          <Navbar.Brand as={Link} to='/CoderHouse-React-ProyectoFinal/'>
             <img src={imagen} alt="Logo" />
             <span className="ms-4">TiendaCoder</span>
           </Navbar.Brand>
           <Nav className="ms-auto">
-            <Nav.Link as={Link} to='/CoderHouse-React-Entregable2/'>Home</Nav.Link>
+            <Nav.Link as={Link} to='/CoderHouse-React-ProyectoFinal/'>Home</Nav.Link>
             <NavDropdown title="Categorías" id="navbarScrollingDropdown">
-              <NavDropdown.Item as={Link} to='/CoderHouse-React-Entregable2/category/Celulares'>Celulares</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to='/CoderHouse-React-Entregable2/category/Tablets'>Tablets</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to='/CoderHouse-React-Entregable2/category/Laptops'>Laptops</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to='/CoderHouse-React-ProyectoFinal/category/Celulares'>Celulares</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to='/CoderHouse-React-ProyectoFinal/category/Tablets'>Tablets</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to='/CoderHouse-React-ProyectoFinal/category/Laptops'>Laptops</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item as={Link} to='/CoderHouse-React-Entregable2/'>Vista General</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to='/CoderHouse-React-ProyectoFinal/'>Vista General</NavDropdown.Item>
             </NavDropdown>
             <CartWidget itemCount="0" />
           </Nav>

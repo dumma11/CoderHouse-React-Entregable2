@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/CoderHouse-React-Entregable2/',
+  base: '/CoderHouse-React-ProyectoFinal/',
   plugins: [react()],
 })
