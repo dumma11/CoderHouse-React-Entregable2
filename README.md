@@ -20,17 +20,17 @@
 ## 🛠️ Tecnologías utilizadas
 
 - **Frontend**
-React: Biblioteca principal para construir la interfaz.
+  - React: Biblioteca principal para construir la interfaz.
 React Router DOM: Para la navegación y manejo de rutas dinámicas dentro de la app.
 
 - **Estilo**
-CSS personalizado: Cada componente tiene su propio archivo CSS para mantener un diseño modular y organizado.
-Bootstrap/React Bootstrap: Para componentes de estilo reutilizables y diseño responsivo.
-SweetAlert2: Para mostrar notificaciones y alertas visuales interactivas.
+  - CSS personalizado: Cada componente tiene su propio archivo CSS para mantener un diseño modular y organizado.
+  - Bootstrap/React Bootstrap: Para componentes de estilo reutilizables y diseño responsivo.
+  - SweetAlert2: Para mostrar notificaciones y alertas visuales interactivas.
 
 - **Backend**
-Firebase Firestore: Base de datos en tiempo real para almacenar productos, órdenes y gestionar la persistencia de datos.
-Firebase Timestamp: Para registrar las fechas de las órdenes y otras acciones importantes.
+  - Firebase Firestore: Base de datos en tiempo real para almacenar productos, órdenes y gestionar la persistencia de datos.
+  - Firebase Timestamp: Para registrar las fechas de las órdenes y otras acciones importantes.
 
 ---
 
@@ -53,13 +53,13 @@ TiendaCoder/
 
 ## 🧰 Instalación y ejecución
 **Clona el repositorio en tu máquina local:**
-git clone https://github.com/dumma11/CoderHouse-React-Entregable2.git
+- git clone https://github.com/dumma11/CoderHouse-React-Entregable2.git
 
 **Instala las dependencias:**
-npm install
+- npm install
 
 **Inicia el servidor de desarrollo:**
-npm start
+- npm start
 
 **Dependencias principales:**
 - react: La biblioteca principal para construir la interfaz de usuario de la aplicación.
