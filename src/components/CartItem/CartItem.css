@@ -1,0 +1,35 @@
+.cart-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item-title {
+    font-size: 1.2rem;
+    margin: 0 0 5px 0;
+    color: #333;
+}
+
+.cart-item-quantity {
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.cart-item-remove-btn {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: #e53935;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cart-item-remove-btn:hover {
+    background-color: #b71c1c;
+}
