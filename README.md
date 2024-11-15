@@ -1,4 +1,6 @@
-# ![TiendaCoder](./src/assets/images/logo.png) TiendaCoder
+## TiendaCoder
+
+# ![TiendaCoder](./src/assets/images/logochico.png)
 
 **TiendaCoder** es una aplicación de e-commerce desarrollada con **React** como proyecto educativo. Permite a los usuarios explorar una tienda virtual, filtrar productos por categorías y gestionar su carrito de compras.
 
