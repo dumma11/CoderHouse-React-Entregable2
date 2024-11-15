@@ -11,17 +11,26 @@
 - **Explorar productos**: Visualiza todos los productos disponibles.
 - **Filtrar por categorías**: Laptops, Teléfonos y Tablets.
 - **Gestión del carrito**:
-  - Agregar productos.
-  - Eliminar productos.
-  - Ajustar cantidades seleccionadas.
+  - Agregar productos al carrito.
+  - Vaciar carrito.
+  - Eliminar productos de forma individual.
 
 ---
 
 ## 🛠️ Tecnologías utilizadas
 
-- **Frontend**: React, React Router DOM.
-- **Estilo**: Bootstrap, React Bootstrap.
-- **Backend**: Firebase.
+- **Frontend**
+React: Biblioteca principal para construir la interfaz.
+React Router DOM: Para la navegación y manejo de rutas dinámicas dentro de la app.
+
+- **Estilo**
+CSS personalizado: Cada componente tiene su propio archivo CSS para mantener un diseño modular y organizado.
+Bootstrap/React Bootstrap: Para componentes de estilo reutilizables y diseño responsivo.
+SweetAlert2: Para mostrar notificaciones y alertas visuales interactivas.
+
+- **Backend**
+Firebase Firestore: Base de datos en tiempo real para almacenar productos, órdenes y gestionar la persistencia de datos.
+Firebase Timestamp: Para registrar las fechas de las órdenes y otras acciones importantes.
 
 ---
 
@@ -30,11 +39,12 @@
 ```plaintext
 TiendaCoder/
 ├── public/
-│   └── index.html
+│   └── vite.svg
 ├── src/
 │   ├── components/         # Componentes reutilizables
 │   ├── context/            # Contexto global para el carrito
-│   ├── views/              # Páginas principales (Home, Categoría, Detalle)
+│   ├── assets/             # Logos
+│   ├── firebase/           # Base de datos
 │   ├── App.js              # Componente principal
 │   └── index.js            # Punto de entrada de la aplicación
 ├── package.json            # Dependencias del proyecto
@@ -51,12 +61,20 @@ npm install
 **Inicia el servidor de desarrollo:**
 npm start
 
-## 📦 Dependencias principales
-El proyecto utiliza las siguientes dependencias. Puedes consultar su documentación oficial haciendo clic en los enlaces:
+**Dependencias principales:**
+- react: La biblioteca principal para construir la interfaz de usuario de la aplicación.
+- react-dom: Necesaria para renderizar la aplicación React en el navegador.
+- react-router-dom: Para manejar el enrutamiento en la aplicación, permitiendo la navegación entre diferentes vistas.
+- firebase: Para interactuar con la base de datos de Firebase, como la creación de órdenes en el carrito de compras.
+- bootstrap: Framework de CSS para estilos y componentes responsivos.
+- react-bootstrap: Biblioteca de componentes de Bootstrap para React, que proporciona componentes listos para usar como botones, tarjetas, formularios, etc.
+- sweetalert2: Para mostrar alertas y mensajes interactivos.
 
-React
-React Router DOM
-Bootstrap
-React Bootstrap
-React Icons
-Firebase
+**Dependencias de desarrollo:**
+- vite: Herramienta de construcción y servidor de desarrollo rápida para React.
+- eslint: Herramienta de análisis de código estático para mantener la calidad del código.
+- @vitejs/plugin-react: Plugin necesario para trabajar con React en Vite.
+- gh-pages: Para desplegar la aplicación en GitHub Pages.
+- @eslint/js: Configuración de ESLint para asegurar la calidad del código.
+- @types/react y @types/react-dom: Tipos de TypeScript para React (aunque no estés usando TypeScript, algunas herramientas pueden aprovechar estos tipos).
+- eslint-plugin-react, eslint-plugin-react-hooks, eslint-plugin-react-refresh: Plugins de ESLint para asegurar que las mejores prácticas de React se sigan.
